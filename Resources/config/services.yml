@@ -1,0 +1,7 @@
+parameters:
+#    openview_notifications.example.class: Openview\NotificationsBundle\Example
+
+services:
+#    openview_notifications.example:
+#        class: %openview_notifications.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

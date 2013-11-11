@@ -1,0 +1,16 @@
+openview_notifications_list:
+    pattern:  /notification/list/{userid}
+    defaults: { _controller: OpenviewNotificationsBundle:Notification:list }
+
+
+openview_prosit_notifications_setread:
+    pattern:  /notification/setread/{id}
+    defaults: { _controller: OpenviewNotificationsBundle:Notification:setRead }
+
+openview_prosit_notifications_setarchived:
+    pattern:  /notification/setarchived/{id}
+    defaults: { _controller: OpenviewNotificationsBundle:Notification:setArchived }
+    
+openview_prosit_notifications_setdeleted:
+    pattern:  /notification/setdeleted/{id}
+    defaults: { _controller: OpenviewNotificationsBundle:Notification:setDeleted }

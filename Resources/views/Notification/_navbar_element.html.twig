@@ -1,0 +1,11 @@
+{# Show the navbar menu element with the waiting notifications 
+Parameters:
+- notificationsCount: # of waiting notifications
+#}
+<li class="blue">
+    <a href="{{ path('openview_notifications_list', {'userid': app.user.id}) }}"
+       title="{{ 'views.navbarelement.hint' | trans({'%count%': notificationsCount}, 'notifications') }}">
+        <i class="icon-bell-alt icon-animated-bell"></i>
+        <span class="badge badge-important">{{ notificationsCount }}</span>
+    </a>
+</li>

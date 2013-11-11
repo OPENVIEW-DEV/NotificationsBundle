@@ -1,0 +1,24 @@
+views:
+    navbarelement:
+        hint: Ci sono %count% notifiche in attesa di lettura
+        
+    latestwidget:
+        title: Le mie ultime notifiche
+        list-btn: Tutte le notifiche
+        
+    list:
+        title: Tutte le notifiche
+        field:
+            date: Data
+            read: Letta
+            message: Messaggio
+            actions: Azioni
+        notread: Notifica non ancora letta
+        setread: Segna come letta
+        delete: Elimina notifica
+        emptylist: Nessuna notifica
+        
+        
+messages:
+    norights:
+        otherusers: Non hai i permessi per vedere le notifiche di altri utenti.

@@ -1,0 +1,35 @@
+{# Show the widget with the latest notifications
+
+Parameters:
+- notifications: latest notifications array
+- userid: user id
+#}
+
+<div class="widget-box">
+    <div class="widget-header">
+        <h5>{{ 'views.latestwidget.title' | trans({}, 'notifications') }}</h5>
+    </div>
+    <div class="widget-body">
+        <div class="widget-main">
+            {% if notifications | length > 0 %}
+                {% for notification in notifications %}
+                    <div class="profile-activity">
+                        <div>
+                            <i class="pull-left thumbicon icon-info btn-success no-hover"></i>
+                            {{ notification.decodedMessage|raw }}
+                            <div class="time">
+                                <i class="icon-time bigger-110"></i> {{ notification.createdAt | date('d/m/Y H:i') }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p class="alert alert-info"><i class="icon icon-info-sign bigger-150"></i> Nessuna notifica.</p>
+            {% endif %}
+            <div class="clearfix" style="margin-top: 16px;">
+                <a class="btn btn-small pull-right" href="{{ path('openview_notifications_list', { 'userid': userid }) }}"
+                   >{{ 'views.latestwidget.list-btn' | trans({}, 'notifications') }}</a>
+            </div>
+        </div>
+    </div>
+</div>

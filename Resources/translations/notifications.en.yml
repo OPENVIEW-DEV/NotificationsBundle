@@ -1,0 +1,24 @@
+views:
+    navbarelement:
+        hint: There are %count% notification(s) waiting to be read
+        
+    latestwidget:
+        title: My latest notifications
+        list-btn: Notifications list
+        
+    list:
+        title: Notifications list
+        field:
+            date: Date
+            read: Read
+            message: Message
+            actions: Actions
+        notread: Unread notification
+        setread: mark as read
+        delete: Delete notification
+        emptylist: No notifications
+        
+        
+messages:
+    norights:
+        otherusers: You have no rights to see other users' notifications.
